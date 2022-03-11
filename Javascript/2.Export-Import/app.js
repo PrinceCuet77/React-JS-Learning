@@ -6,3 +6,10 @@ import prince from './person'
 // Also, I must use {} to received that data.
 import { clean } from './utility'
 import { baseData } from './utility'
+
+// I can use alias in named export
+import { clean as cl } from './utility'
+
+// I can store all the exported property inside a object
+// Then, I have to use those data like - allObject.clean & allObject.baseData
+import * as allObject from './utility'
